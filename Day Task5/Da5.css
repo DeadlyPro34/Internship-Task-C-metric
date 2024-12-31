@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding: -25rem;
+}
+                                                /* header */
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('/Images/Cola.png');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: -1% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-link{
+    flex: 1;
+    text-align: right;
+}
+.nav-link ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-link ul li a{
+    color: rgb(182, 154, 196);
+    text-decoration: none;
+    font-size: 20px;
+    position: top;
+}
+
+.nav-link ul li::after{
+    margin: auto;
+    width: 0%;
+    height: 2px;
+    background-color: blueviolet;
+    display: block;
+    transition: .5s;
+    content: '';
+}
+
+.nav-link ul li:hover::after{
+    width: 100%;
+}
+nav .bx{
+    display: none;
+}
+@media screen and (max-width: 1150px){
+    
+    .nav-link{
+        position: fixed;
+        background: transparent;
+        backdrop-filter: blur(10px);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        z-index: 2;
+        transition: right 1s;
+        text-align: left;
+    }
+    .nav-link ul li{
+        display: block;
+    }
+    nav .bx{
+        display: block;
+        color: #cf8310;
+        margin: 10px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .nav-link ul{
+        padding: 10px;
+    }
+
+    .cta h2{
+        font-size: 24px;
+    }
+}
+
+                                                /* Intro */
+.intro{
+    /* width: 80%;
+    margin: 50px; */
+    text-align: center;
+    padding: 50px;
+    background-color: rgb(110,110,4);
+}
+.In p{
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 32px;
+    margin: 5px 20px;
+    padding: 10px;
+    color: bisque;
+}
+
+.Intro-all{
+    display: flex;
+    justify-content: space-between;
+}
+.Intro-cl{
+    flex-basis: 30%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.Intro-cl img{
+    width: 100%;
+    display: block;
+}
+
+@media screen and (max-width: 1150px){
+    .Intro-all{
+        flex-direction: column;
+    }
+}
+
+/* Intro hover */
+.hove-up{
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.hove-up:hover{
+    background-color: rgba(221, 21, 21, 0.7);
+}
+
+.hove-up p{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    color: aliceblue;
+    font-size: 20px;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 0.5s;
+    font-weight: 500;
+}
+
+.hove-up:hover p{
+    bottom: 49%;
+    opacity: 1;
+}
+
+                        /* order */
+
+#Section-3{
+    background-color: rgb(217, 223, 18);
+}
+h1{
+    text-align: center;
+}
+.order-in p{
+    text-align: center;
+    padding: 50px;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 32px;
+    margin: 5px 20px;
+    padding: 10px;
+    color: bisque;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.order-all .order-cl{
+    color: white;
+    user-select: none; /*after*/
+    width: 200px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    backdrop-filter: blur(30px);
+    background: rgba(225, 225, 225, 0.5);
+    border: 1px solid rgba(225, 225, 225, 0.5);
+}
+
+.order-all .order-cl:hover{
+    background: rgba(174, 134, 13, 0.61);
+}
+
+.order-all .order-cl .img{
+    width: 300px;
+    height: 200px;
+    border-radius: 10%;
+    margin-bottom: 50px;
+    padding: 4px;
+}
+
+.order-all .order-cl .order-name{
+    font-size: 25px;
+    color: black;
+    font-weight: 500;
+    margin: 14px 0 40px;
+}
+
+.order-all .order-cl .msg-button{
+    font-size: 20px;
+    padding: 10px 35px;
+    color: blueviolet;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    background: whitesmoke;
+    border: 1px solid rebeccapurple;
+    transition: 0.2s ease;
+}
+
+.order-all .order-cl .msg-button:hover{
+    background: rgba(225, 225,225, 0.5);
+    border: 1px solid white;
+    color: burlywood;
+
+}
+
+.swiper-slider{
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0px 70px 55px;
+}
+
+.swiper-slider .swiper-slide-button{
+    color: rgb(224, 106, 106);
+    margin-top: -50px;
+    transition: 0.2 ease;
+}
+
+.swiper-slider .swiper-slide-button:hover{
+    color: aquamarine;
+}
+@media screen and (max-width: 1150px){
+    .swiper-slider{
+        margin: 0 10px 40px;
+    }
+
+    .swiper-slider .swiper-slide-button{
+        display: none;
+    }
+}
+
+
+
+
+/* call to Action */
+
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: url('/Images/cta.png');
+    background-position: center;
+    /* background-size: cover; */
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cta h2{
+    color: beige;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.cta-btn a{
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(169, 108, 108);
+    font-size: 24px;
+    border: 2px solid whitesmoke;
+    padding: 2px 20px;
+    border-radius: 50px;
+    margin-top: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.cta-btn a:hover{
+    background: black;
+    transition: 0.5s;
+}
+                        /* footer */
+.footer{
+    text-align: center;
+    padding: 50px;
+    background-color:rgb(252, 169, 61);
+    padding: 30px;
+}
+                        
+.footer p{
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 10px;
+    padding: 10px;
+    color: bisque;
+}    
+
+.icons .bx{
+    color: black;
+    cursor: pointer;
+    padding: 10px 0px;
+}
+
+/* section ani */
+.reveal{
+    /* position: relative; */
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
