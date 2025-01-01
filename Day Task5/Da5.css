@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Playwrite+AU+SA:wght@100..400&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Bebas Neue", sans-serif;
 }
 
 html{
@@ -13,7 +14,7 @@ html{
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: url('/Images/Cola.png');
+    background-image: url('Images/Cola.png');
     background-position: center;
     background-size: cover;
     position: relative;
@@ -60,7 +61,71 @@ nav img{
 nav .bx{
     display: none;
 }
-@media screen and (max-width: 1150px){
+@media only screen and (max-width: 1200px){
+    
+    .nav-link{
+        position: fixed;
+        background: transparent;
+        backdrop-filter: blur(10px);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        z-index: 2;
+        transition: right 1s;
+        text-align: left;
+    }
+    .nav-link ul li{
+        display: block;
+    }
+    nav .bx{
+        display: block;
+        color: #cf8310;
+        margin: 10px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .nav-link ul{
+        padding: 10px;
+    }
+
+    .cta h2{
+        font-size: 24px;
+    }
+}
+@media only screen and (max-width: 768px){
+    
+    .nav-link{
+        position: fixed;
+        background: transparent;
+        backdrop-filter: blur(10px);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        z-index: 2;
+        transition: right 1s;
+        text-align: left;
+    }
+    .nav-link ul li{
+        display: block;
+    }
+    nav .bx{
+        display: block;
+        color: #cf8310;
+        margin: 10px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .nav-link ul{
+        padding: 10px;
+    }
+
+    .cta h2{
+        font-size: 24px;
+    }
+}
+@media only screen and (max-width: 600px){
     
     .nav-link{
         position: fixed;
@@ -130,6 +195,76 @@ nav .bx{
 @media screen and (max-width: 1150px){
     .Intro-all{
         flex-direction: column;
+    }
+    .In p{
+        font-size: 25px;
+        font-weight: 300;
+        line-height: 32px;
+        margin: 5px 20px;
+        padding: 10px;
+        color: bisque;
+    }
+    .Intro-cl img{
+        width: 80%;
+        display: ruby;
+    }
+    .hove-up{
+        display: ruby;
+        height: 109%;
+        width: 80%;
+        position: absolute;
+        top: 0;
+        left: 88px;
+        transition: 0.5s;
+    }
+    
+    .hove-up:hover{
+        background-color: rgba(221, 21, 21, 0.7);
+    }
+    
+    .hove-up p{
+        position: absolute;
+        left: 50%;
+        width: 100%;
+        color: aliceblue;
+        font-size: 33px;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: 0.5s;
+        font-weight: 500;
+    }
+    
+    .hove-up:hover p{
+        bottom: 49%;
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 768px){
+    .Intro-all{
+        flex-direction: column;
+    }
+    .In p{
+        font-size: 25px;
+        font-weight: 300;
+        line-height: 32px;
+        margin: 5px 20px;
+        padding: 10px;
+        color: bisque;
+    }
+}
+@media screen and (max-width: 600px){
+    .Intro-all{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    .In p{
+        font-size: 25px;
+        font-weight: 300;
+        line-height: 32px;
+        margin: 5px 20px;
+        padding: 10px;
+        color: bisque;
     }
 }
 
