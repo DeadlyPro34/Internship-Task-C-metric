@@ -277,7 +277,7 @@ h1{
 .cta{
     margin: 100px auto;
     width: 80%;
-    background-image: url('/Images/cta.png');
+    background-image: url('Images/cta.png');
     background-position: center;
     /* background-size: cover; */
     border-radius: 10px;
