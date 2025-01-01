@@ -13,7 +13,7 @@ html{
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: url('/Images/Cola.png');
+    background-image: url('Images/Cola.png');
     background-position: center;
     background-size: cover;
     position: relative;
@@ -259,6 +259,36 @@ h1{
 .swiper-slider .swiper-slide-button:hover{
     color: aquamarine;
 }
+@media screen and (max-width: 576px) {
+    .swiper-slider {
+        margin: 0;
+    }
+
+    .swiper-slider .swiper-slide-button {
+        display: block; 
+        font-size: 14px; 
+    }
+}
+@media screen and (max-width: 992px) {
+    .swiper-slider {
+        margin: 0 5px 30px;
+    }
+
+    .swiper-slider .swiper-slide-button {
+        display: block; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .swiper-slider {
+        margin: 0 0 20px;
+    }
+
+    .swiper-slider .swiper-slide-button {
+        display: block;
+    }
+}
+
 @media screen and (max-width: 1150px){
     .swiper-slider{
         margin: 0 10px 40px;
@@ -268,16 +298,12 @@ h1{
         display: none;
     }
 }
-
-
-
-
 /* call to Action */
 
 .cta{
     margin: 100px auto;
     width: 80%;
-    background-image: url('/Images/cta.png');
+    background-image: url('Images/cta.png');
     background-position: center;
     /* background-size: cover; */
     border-radius: 10px;
