@@ -11,7 +11,7 @@ body
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('/New folder/RFimg/BGUM.jpg');
+    background: url('RFimg/BGUM.jpg');
     background-size: cover;
     background-position: center;
 }
