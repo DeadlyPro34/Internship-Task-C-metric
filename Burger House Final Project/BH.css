@@ -205,8 +205,9 @@ nav .bx {
         grid-area: 1 / 1 / 3 / 2; 
     }
 }
+
 section{
-    background-color: royalblue;
+    background-color: rgb(252, 169, 61);
 }
 .In {
     text-align: center;
@@ -316,25 +317,42 @@ h1 {
 /* call to Action */
 
 .cta {
-    margin: 100px auto;
-    width: 80%;
+    margin: 10px auto;
+    width: 100%;
+    height: fit-content;
     background-image: url('Images/cta.png');
     background-position: center;
     border-radius: 10px;
     text-align: center;
-    padding: 100px 0;
+    padding: 65px 0;
 }
 
-.cta h2 {
-    color: beige;
-    font-size: 20px;
-    margin-bottom: 25px;
+.cta-all h2{
+    font-size: 2rem;
+    font-weight: 500;
+    color: azure;
 }
 
-.cta-btn a {
+.cta-all form{
+    max-width: 400px;
+    margin-inline: auto;
+    margin-top: 1rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.cta-all input{
+    height: 30px;
+    outline: none;
+    border: 1px solid #ceb6b2;
+    font-size: 1rem;
+    color: gray;
+    border-radius: 10px;
+}
+.cta-btn button {
     text-decoration: none;
     display: inline-block;
-    color: rgb(169, 108, 108);
+    color: rgb(232, 212, 212);
     font-size: 24px;
     border: 2px solid whitesmoke;
     padding: 2px 20px;
@@ -345,8 +363,8 @@ h1 {
     cursor: pointer;
 }
 
-.cta-btn a:hover {
-    background: black;
+.cta-btn button:hover {
+    background: rgb(204, 181, 181);
     transition: 0.5s;
 }
 
@@ -366,8 +384,14 @@ h1 {
     color: bisque;
 }
 
+.footer h5{
+    font-weight: 300;
+    color: bisque;
+}
+
 .icons .bx {
-    color: black;
+    font-size: 20px;
+    color: rgb(255, 251, 251);
     cursor: pointer;
     padding: 10px 0px;
 }
