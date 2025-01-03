@@ -24,21 +24,52 @@
                     <li><a href="#Section-2">MENU</a></li>
                     <li><a href="#Section-3">OUR STORY</a></li>
                     <li><a href="#Section-4">CONTACT US</a></li>
-                    <li><a href="Burger House Final Project/New folder/RF.htm">LOGIN</a></li>
+                    <li><a  id="login-button">Login</a></li>
+                    <!-- <li>
+                        <a href="#"><i class='bx bxs-user' id="login-button">Login</i></a>
+                    </li> -->
                 </ul>
             </div>
             <i class='bx bx-menu' onclick="showmenu()"></i>
         </nav>
         <div class="header__container" id="home">
             <div class="header__content">
-                <h2>IT IS GOOD TIME FOR THE GREATE TASTE OF BURGER</h2>
-                <h1>BURGER<br/><span>WEEK</span></h1>
+                <h2 data-aos="fade-right" data-aos-duration="1400">IT IS GOOD TIME FOR THE GREATE TASTE OF BURGER</h2>
+                <h1 data-aos="zoom-out" data-aos-duration="1400">BURGER<br /><span>WEEK</span></h1>
             </div>
             <div class="header__image">
-                <img src="Images/MX2.png" alt="header">
+                <img src="Images/MX2.png" alt="header" data-aos="zoom-in" data-aos-duration="1400">
             </div>
         </div>
-       
+        <div class="login grid" id="login-content">
+            <form action="" class="login-form grid">
+                <h3 class="login-title">Log In</h3>
+            <div class="login-group grid">
+                <div>
+                    <label class="login-label">Email</label>
+                    <input type="email" placeholder="Enter Your Email" id="l-email" class="login-input">
+                </div>
+
+                <div>
+                    <label class="login-label">Password</label>
+                    <input type="password" placeholder="Enter Your Password" id="l-pass" class="login-input">
+                </div>
+            </div>
+
+            <div>
+                <span class="login-signup">
+                    You do not have an account? <a href="#">Sign up</a>
+                </span>
+
+                <a href="#" class="login-forgot">
+                    You forgot your password!!
+                </a>
+
+                <button type="submit" class="login-button button">Log In</button>
+            </div>
+            </form>
+            <i class='bx bx-x login-close' id="login-close"></i>
+        </div>
     </section>
     <!-- Intro -->
     <section id="Section-2">
@@ -46,39 +77,39 @@
             <h1>Choose & Enjoy</h1>
             <div class="container swiper">
                 <div class="order-in">
-                    <p>Hi Here you can select the burger coffee & fries you like to have enjoy your meal!!!!</p>
+                    <p>Hi! Here you can select the burger, coffee, & fries you like to have. Enjoy your meal!</p>
                 </div>
                 <div class="swiper-slider">
                     <div class="order-all swiper-wrapper">
                         <div class="order-cl swiper-slide">
                             <img src="Images/Crispy veggie burger.png" class="img">
                             <h2 class="order-name">Crispy Veggie Burger</h2>
-                            <button class="msg-button">Add to Cart</button>
+                            <button class="msg-button">Order Now</button>
                         </div>
                         <div class="order-cl swiper-slide">
                             <img src="Images/Classic Coffee Regular with Cinammon Spice.png" class="img">
-                            <h2 class="order-name">Classic Coffe Regular</h2>
-                            <button class="msg-button">Add to Cart</button>
+                            <h2 class="order-name">Classic Coffee Regular</h2>
+                            <button class="msg-button">Order Now</button>
                         </div>
                         <div class="order-cl swiper-slide">
                             <img src="Images/Veg Pizza McPuff.png" class="img">
                             <h2 class="order-name">Veg Pizza McPuff</h2>
-                            <button class="msg-button">Add to Cart</button>
+                            <button class="msg-button">Order Now</button>
                         </div>
                         <div class="order-cl swiper-slide">
                             <img src="Images/2 Crispy Veggie Burger.png" class="img">
                             <h2 class="order-name">2 Crispy Veggie Burger</h2>
-                            <button class="msg-button">Add to Cart</button>
+                            <button class="msg-button">Order Now</button>
                         </div>
                         <div class="order-cl swiper-slide">
                             <img src="Images/Fries (Large).png" class="img">
                             <h2 class="order-name">Fries</h2>
-                            <button class="msg-button">Add to Cart</button>
+                            <button class="msg-button">Order Now</button>
                         </div>
                         <div class="order-cl swiper-slide">
-                            <img src="Images/Iced Coffee with Cinammon Spice.png" class="img">
-                            <h2 class="order-name">Iced Coffee With Cinammon Spice</h2>
-                            <button class="msg-button">Add to Cart</button>
+                            <img src="Images/BG1.png" class="img">
+                            <h2 class="order-name">Large Veg. Burger</h2>
+                            <button class="msg-button">Order Now</button>
                         </div>
                     </div>
 
@@ -90,6 +121,7 @@
             </div>
         </div>
     </section>
+
     <!-- Order -->
     <section class="intro" id="Section-3">
         <div class="reveal">
@@ -99,22 +131,16 @@
             </div>
             <div class="Intro-all banner__container order__grid">
                 <div class="Intro-cl">
-                    <!-- <div class="hove-up"> -->
-                        <p>A burger is a sandwich of one.</p>
-                        <h4>Yoyyoyoy</h4>
-                    <!-- </div> -->
+                    <h4>Cripsy and large burger</h4>
+                    <p>A burger is a sandwich of one.</p>
                 </div>
                 <div class="Intro-cl">
-                    <!-- <div class="hove-up"> -->
-                        <p>The vegetarian burgers found.</p>
-                            <h4>Try it Out Today</h4>
-                    <!-- </div> -->
+                    <h4>Try it Out Today</h4>
+                    <p>The vegetarian burgers found.</p>
                 </div>
                 <div class="Intro-cl">
-                    <!-- <div class="hove-up"> -->
-                        <p>The United States.</p>
-                            <h4>Fresh & Chill</h4>
-                    <!-- </div> -->
+                    <h4>Fresh & Chill</h4>
+                    <p>The United States.</p>
                 </div>
             </div>
         </div>
@@ -124,27 +150,29 @@
     <section id="Section-4" class="cta">
         <div class="reveal">
             <div class="cta-all">
-                <h2>For reservation<br/> Add your details below!!!!</h2>
+                <h2>For reservation<br /> Add your details below!!!!</h2>
                 <form>
                     <input type="text" placeholder="Name">
                     <input type="email" placeholder="Email">
                     <input type="date" placeholder="Date">
                     <input type="time" placeholder="Time">
                     <input type="number" placeholder="Phone no.">
-                
-                <div class="cta-btn">
-                    <button type="submit">Contact Us</button>
-                </div>
-            </form>
+
+                    <div class="cta-btn">
+                        <button type="submit">Contact Us</button>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
     <!-- Footer -->
     <section class="footer">
-        <h3>About Us</h3>
-        <p>We here by sell our Burgers and Coffee We established this in 2024.<br>
-            <h5>Copyright © 2025 Web Burger House. All rights reserved.</h5></p>
-        <div class="icons">
+        <h3 data-aos="zoom-in" data-aos-duration="1400">About Us</h3>
+        <p data-aos="zoom-in" data-aos-duration="1400">We here by sell our Burgers and Coffee We established this in
+            2024.<br>
+        <h5 data-aos="zoom-in" data-aos-duration="1400">Copyright © 2025 Web Burger House. All rights reserved.</h5>
+        </p>
+        <div class="icons" data-aos="zoom-in" data-aos-duration="1400">
             <i class='bx bxl-facebook-circle'></i>
             <i class='bx bxl-instagram'></i>
             <i class='bx bxl-twitter'></i>
@@ -164,7 +192,6 @@
     </script>
 
     <script src="BH.js">
-
     </script>
 </body>
 

@@ -63,6 +63,9 @@ nav img {
     width: 100%;
 }
 
+/* .nav-link a{
+    display: none;
+} */
 nav .bx {
     display: none;
 }
@@ -98,11 +101,120 @@ nav .bx {
     line-height: 1.2;
     text-align: left;
     margin: -9px 0;
+    color: #cf8310;
 }
 
 .header__content h1 span {
     font-size: 5rem;
-    color: #ceb6b2;
+    color: #cf8310;
+}
+.header__container h2:hover{
+    color: yellowgreen;
+}
+.header__container h1:hover{
+        -webkit-text-stroke: 1px rgb(249, 255, 255);
+        color: transparent;
+}
+
+/* Login */
+.login{
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: hsla(230, 12%, 96%, .6);
+    backdrop-filter: blur(16px);
+    align-items: center;
+    padding: 1.5rem;
+    text-align: center;
+    transition: top .4s;
+}
+
+.login-form{
+    background-color: #cf8310;
+    padding: 2rem 1.5rem;
+    border: 2px solid hsl(230, 50%, 90%);
+    row-gap: 1.25rem;
+    max-width: 400px;
+    margin-inline: auto;
+    margin-top: 1rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.login-title{
+    font-size: 1.25rem;
+}
+
+.login-label{
+    display: block;
+    text-align: initial;
+    color: hsl(230, 70%, 16%);
+    font-weight: 500;
+    margin-bottom: .25rem;
+}
+
+.login-input{
+    width: 100%;
+    background-color: hsl(230, 100%, 97%);
+    border: 2px solid hsl(230, 50%, 90%);
+    padding: 1rem;
+    color: hsl(230, 16%, 45%);
+}
+
+.login-signup,
+.login-forgot {
+    display: block;
+    font-size: 5px;
+}
+
+.login-signup{
+    font-size: larger;
+    margin-bottom: .5rem;
+}
+
+.login-forgot{
+    font-size: small;
+}
+
+.login-signup a{
+    color: hsl(230, 50%, 90%);
+    font-weight: 500;
+}
+
+.login-close{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2rem;
+    color: hsl(230, 70%, 16%);
+    cursor: pointer;
+}
+
+.login-button{
+    width: 100%;
+    cursor: pointer;
+}
+
+.button{
+    display: inline-block;
+    background-color: hsl(230, 62%, 56%);
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    padding: 1rem 1.5rem;
+    transition: box-shadow .4s;
+    font-size: 1rem;
+}
+
+.button:hover{
+    box-shadow: 0 4px 32px hsla(230, 72%, 32%, .4); 
+}
+
+/* show login */
+.show-login{
+    top: 0;
 }
 
 @media screen and (max-width: 1150px) {
@@ -177,13 +289,23 @@ nav .bx {
     margin-bottom: 0.5rem;
     font-size: 1.5rem;
     font-weight: 500;
-    color: var(--white);
+    color: rgb(249, 249, 249);
 }
 
 .Intro-cl h4 {
-    font-size: 2rem;
-    font-weight: 600;
-    color: var(--white);
+    font-size: 3rem;
+    font-weight: 500;
+    color: rgb(82, 36, 222);
+}
+
+.Intro-cl h4:hover{
+    -webkit-text-stroke: 1px rgb(209, 239, 241);
+    color: transparent;
+}
+
+.Intro-cl p:hover{
+    -webkit-text-stroke: 1px rgb(209, 239, 241);
+    color: transparent;
 }
 
 @media (min-width: 540px) {
